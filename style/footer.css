@@ -42,6 +42,11 @@
     gap: 8px;
 }
 
+.footer__link_social {
+    line-height: 0;
+    display: inline-block;
+}
+
 .footer__link_contact {
     display: flex;
     align-items: center;
