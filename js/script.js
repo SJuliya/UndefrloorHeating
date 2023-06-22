@@ -11,6 +11,7 @@ new Swiper('.hero__slider', {
     },
     breakpoints: {
         320: {
+            spaceBetween: 8,
             slidesPerView: 1,
         },
         560: {
