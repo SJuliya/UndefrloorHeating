@@ -1,3 +1,5 @@
+//Slider
+
 new Swiper('.hero__slider', {
     slidesPerView: 2,
     spaceBetween: 10,
@@ -11,11 +13,13 @@ new Swiper('.hero__slider', {
     },
     breakpoints: {
         320: {
-            spaceBetween: 8,
             slidesPerView: 1,
         },
         560: {
             spaceBetween: 8
         }
     },
-})
+});
+
+//Calc
+

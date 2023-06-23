@@ -1,7 +1,7 @@
 :root {
     --width-slide: 590px;
-    --width-block: calc(50% - 10px);
     --gap: 10px;
+    --width-block: calc(50% - var(--gap) / 2);
     --padding: 50px;
 }
 
@@ -81,6 +81,12 @@ ul {
     margin-bottom: 0;
 }
 
+.hero .swiper {
+    width: calc(100% - 8px);
+    margin-left: 0;
+    margin-right: 0;
+}
+
 @media(max-width: 1240px) {
     :root {
         --padding: 30px;
@@ -109,6 +115,10 @@ ul {
     :root {
         --padding: 24px;
         --width-slide: 311px;
+    }
+
+    .hero .swiper {
+        width: 100%;
     }
 
     .container {
