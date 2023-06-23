@@ -1,5 +1,4 @@
 //Slider
-
 new Swiper('.hero__slider', {
     slidesPerView: 2,
     spaceBetween: 10,
@@ -22,4 +21,27 @@ new Swiper('.hero__slider', {
 });
 
 //Calc
+const calcForm = document.querySelector('.js-calc-form');
+const totalSquare = document.querySelector('.js-square');
+const totalPrice = document.querySelector('.js-total-price');
+const calcResultWrapper = document.querySelector('.js-result');
 
+const tariff = {
+    economy: 550,
+    comfort: 1400,
+    premium: 2700,
+};
+
+calcForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    if(calcForm.width.value > 0 && calcForm.height.value > 0) {
+        const square = calcForm.width.value * calcForm.height.value;
+        const price = square * tariff[calcForm.tariff.value];
+
+        calcResultWrapper.style.display = 'block';
+
+        totalSquare.textContent = `${square} кв м`;
+        totalPrice.textContent = `${price} руб`;
+    }
+});
