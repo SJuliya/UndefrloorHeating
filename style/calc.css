@@ -132,6 +132,22 @@
     border-radius: 8px;
 }
 
+.calc__result-wrapper_show {
+    display: block;
+}
+
+.calc__submit {
+    margin-right: 8px;
+}
+
+.calc__order {
+    display: none;
+}
+
+.calc__order_show {
+    display: inline-block;
+}
+
 .calc__result {
     margin-bottom: 16px;
     margin-top: 0;
